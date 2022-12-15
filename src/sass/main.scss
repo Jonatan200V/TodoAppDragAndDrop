@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #333;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+input {
+  outline: none;
+  border: none;
+  background: #eeeeee80;
+  border: 1px solid #eee;
+}
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+div {
+  font-family: 'Rajdhani';
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  flex-flow: column wrap;
+
+  &__input {
+    padding: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    &::placeholder {
+      color: #000;
+    }
+  }
+  &__button {
+    padding: 0.6em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+  &__container {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  &__h1 {
+    display: inline;
+    border-bottom: #d0851a solid 0.2em;
+  }
+  &__div {
+    text-align: center;
+    flex-basis: 15em;
+    background: #eeeeee90;
+    padding: 0.2em;
+    height: 20em;
+    border: 0.2em solid #eee;
+    border-radius: 0.5em;
+  }
+  &__tasklist {
+    margin: 1em 0 0 0;
+    height: 20em;
+    width: 100%;
+  }
+  &__task {
+    cursor: pointer;
+    background: #444;
+    margin: 0.2em;
+    padding: 0.2em;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  &__icon {
+    margin: 1em 0 0 0;
+    display: block;
+    width: 4em;
+    height: 4em;
+    transition: 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
